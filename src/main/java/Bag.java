@@ -6,6 +6,7 @@
  */
 
 import java.lang.reflect.Array;
+import java.util.Arrays;
 
 public abstract class Bag {
     /*
@@ -97,6 +98,7 @@ public abstract class Bag {
         if(numberOfContents > 0){
             String item = this.contents[numberOfContents - 1];
             this.contents[numberOfContents - 1] = null;
+            this.numberOfContents --;
             return item;
         }
         return null;
